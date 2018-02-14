@@ -20,6 +20,7 @@ public class ExtraLife : MonoBehaviour {
         {
             MainMenu.lives++;
             MainMenu.score += 100;
+            FindObjectOfType<AudioManager>().Play("Pickup");
             Destroy(gameObject);
         }
     }

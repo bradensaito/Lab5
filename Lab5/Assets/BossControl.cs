@@ -67,11 +67,11 @@ public class BossControl : MonoBehaviour {
         //Debug.LogError("took damage");
         if (stats.currentHealth <= 0)
         {
-            die();
+            bossdie();
         }
     }
 
-    void die()
+    void bossdie()
     {
         Destroy(gameObject);
         MainMenu.score += 1000;
@@ -79,6 +79,7 @@ public class BossControl : MonoBehaviour {
 
     void shoot()
     {
+        FindObjectOfType<AudioManager>().Play("Shot2");
         Instantiate(bullet, nextShot.position, nextShot.rotation);
     }
 }

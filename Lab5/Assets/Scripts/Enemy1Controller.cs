@@ -55,8 +55,8 @@ public class Enemy1Controller : MonoBehaviour {
         Destroy(gameObject);
         MainMenu.score += 100;
 
-        Debug.LogWarning("should play ouch");
-        FindObjectOfType<AudioManager>().PlaySound("Ouch");
+       // Debug.LogWarning("should play ouch");
+        FindObjectOfType<AudioManager>().Play("Ouch");
 
     }
 }

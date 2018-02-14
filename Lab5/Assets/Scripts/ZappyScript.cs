@@ -24,6 +24,7 @@ public class ZappyScript : MonoBehaviour {
 
         if(count >= 100 && !isActive)
         {
+            FindObjectOfType<AudioManager>().Play("Shock");
             isActive = true;
             zappyPart.gameObject.SetActive(true);
             count = 0;

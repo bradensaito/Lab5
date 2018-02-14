@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKey("up") || Input.GetKey("space"))
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, jump);
+                FindObjectOfType<AudioManager>().Play("Jump");
             }
         }
 
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour {
 
         if(Input.GetKeyDown("left shift") || Input.GetKeyDown("right shift"))
         {
-            FindObjectOfType<AudioManager>().PlaySound("Shot1");
+            FindObjectOfType<AudioManager>().Play("Shot1");
             Instantiate(bullet, firePoint.position, firePoint.rotation);
         }
 
@@ -102,6 +103,7 @@ public class PlayerController : MonoBehaviour {
         if ((collision.tag == "Enemy" || collision.tag == "Shield") && isVulnerable)
         {
             //take damage;
+            FindObjectOfType<AudioManager>().Play("Ouch");
             MainMenu.lives -= 1;
             isVulnerable = false;
             if(life3.gameObject.activeInHierarchy)

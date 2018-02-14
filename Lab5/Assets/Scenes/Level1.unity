@@ -437,14 +437,38 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 1f7ea3d20b809b14ea92baea253c9d4b, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
   - name: Ouch
     clip: {fileID: 8300000, guid: 19195eba5b6e1e940a9044921e2374fb, type: 3}
     volume: 1
     pitch: 1
-  - name: Ouch
-    clip: {fileID: 8300000, guid: 19195eba5b6e1e940a9044921e2374fb, type: 3}
+    loop: 0
+    source: {fileID: 0}
+  - name: Pickup
+    clip: {fileID: 8300000, guid: 6de690f32bb8d764b8e0f97c7b27a7ad, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 6b49c26b106d92a4d977d8454d734c3c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shot2
+    clip: {fileID: 8300000, guid: 6b8529cfb65779d4994a6768e2b3ff64, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shock
+    clip: {fileID: 8300000, guid: 0dd76e722ca8e7b42b075d110a4cd552, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &541255780
 Transform:
   m_ObjectHideFlags: 0
